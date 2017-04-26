@@ -30,6 +30,20 @@ namespace Web021.Controllers
             return View(db.Fabricantes.ToList());
         }
 
+        [HttpPost]
+        public JsonResult Dados()
+        {
+            var lista = new List<object>
+            {
+                new Fabricante {nome="GM" },
+                new Fabricante {nome="Ford" },
+                new Fabricante {nome="Fiat" },
+                new {fdfd = "432"},
+                new {gfgfhh = "543"},
+            };
+            return Json(new Fabricante { nome = "GM" });
+        }
+
         // GET: Fabricantes/Details/5
         public ActionResult Details(int? id)
         {
