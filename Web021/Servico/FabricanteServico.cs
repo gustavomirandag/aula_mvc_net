@@ -1,4 +1,5 @@
-﻿using Negocio.Repositorio;
+﻿using Negocio.Dominio;
+using Negocio.Repositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,9 +17,10 @@ namespace Servico
             this.repositorio = repositorio;
         }
 
-        public bool criarFabricante(string nome)
+        public List<Fabricante> obterFabricantes()
         {
-            return this.repositorio.criar(nome) != null;
+            return this.repositorio.todosFabricantes();
         }
+
     }
 }

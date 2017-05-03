@@ -10,6 +10,7 @@ namespace Negocio.Repositorio
     public interface IFabricanteRepositorio
     {
         Fabricante criar(string nome);
+        List<Fabricante> todosFabricantes();
 
     }
 }

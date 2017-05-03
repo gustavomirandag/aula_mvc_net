@@ -14,5 +14,10 @@ namespace DadoMemoria
         {
             throw new NotImplementedException();
         }
+
+        public List<Fabricante> todosFabricantes()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -19,6 +19,6 @@ namespace DadoDB
         {
         }
 
-        public System.Data.Entity.DbSet<Negocio.Dominio.Fabricante> Fabricantes { get; set; }
+        public DbSet<Negocio.Dominio.Fabricante> Fabricantes { get; set; }
     }
 }
