@@ -15,9 +15,9 @@ namespace DadoDB
             throw new NotImplementedException();
         }
 
-        public List<Fabricante> todosFabricantes()
+        public IQueryable<Fabricante> todosFabricantes()
         {
-            return new Context().Fabricantes.ToList();
+            return new Context().Fabricantes;
         }
     }
 }

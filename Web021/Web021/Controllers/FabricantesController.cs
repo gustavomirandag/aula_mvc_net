@@ -27,7 +27,7 @@ namespace Web021.Controllers
         // GET: Fabricantes
         public ActionResult Index()
         {
-            return View(this.servico.obterFabricantes().ConvertAll(
+            return View(this.servico.obterFabricantes().ToList().ConvertAll(
                 (model) => new FabricanteModelView
                 {
                     id = model.id,
@@ -39,7 +39,7 @@ namespace Web021.Controllers
         // GET: Fabricantes 2
         public ActionResult Index2()
         {
-            return View(this.servico.obterFabricantes().ConvertAll(
+            return View(this.servico.obterFabricantes().ToList().ConvertAll(
                 (model) => new FabricanteModelView
                 {
                     id = model.id,

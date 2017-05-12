@@ -17,7 +17,7 @@ namespace Servico
             this.repositorio = repositorio;
         }
 
-        public List<Fabricante> obterFabricantes()
+        public IQueryable<Fabricante> obterFabricantes()
         {
             return this.repositorio.todosFabricantes();
         }
