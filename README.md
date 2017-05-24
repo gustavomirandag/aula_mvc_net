@@ -3,5 +3,5 @@
 
 ### Zipando o projeto para enviar no moodle
 ```bash
-git archive --format zip -o MeuNome-TP0.zip master
+git archive --format zip -o MeuNome_TP0.zip master
 ```
